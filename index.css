@@ -1,0 +1,125 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	/*background: url(bg_img.jpg) no-repeat;*/
+	background-color: #867ae9;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-family: sans-serif;
+}
+
+img {
+	padding: 23px 30px;
+}
+
+.container {
+	position: fixed;
+	margin-top: 600px;
+	width: 450px;
+	height: auto;
+	background: #fefefe;
+	border-radius: 5px;
+}
+
+.label {
+	padding: 20px 130px;
+	font-size: 32px;
+	font-weight: bold;
+	color: #130f40;
+}
+
+.login_form {
+	padding: 20px 40px;
+}
+
+.login_form .font {
+	font-size: 18px;
+	color: #130f40;
+	margin: 5px 0;
+}
+
+.login_form input {
+	height: 40px;
+	width: 350px;
+	padding: 0 5px;
+	font-size: 18px;
+	outline: none;
+	border: 1px solid silver;
+}
+
+.login_form .font2 {
+	margin-top: 30px;
+}
+
+.login_form button {
+	margin: 45px 0 30px 0;
+	height: 45px;
+	width: 365px;
+	font-size: 20px;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	background-color: #0a81ab;
+	border-radius: 3px;
+	border: 1px solid #eaebf5;
+	transition: .5s;
+}
+
+.login_form button:hover {
+	background: #867ae9;
+}
+
+.login_form #email_error, .login_form #pass_error {
+	margin-top: 5px;
+	width: 345px;
+	font-size: 18px;
+	color: #C62828;
+	background: rgba(255, 0, 0, 0.1);
+	text-align: center;
+	padding: 5px 8px;
+	border-radius: 3px;
+	border: 1px solid #EF9A9A;
+	display: none;
+}
+
+/*FOOTER*/
+
+.footer {
+	background-color: #F29720;
+	padding: 66px;
+}
+
+.footer-col {
+	width: 25%;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a h1 {
+	font-size: 20px;
+	text-transform: capitalize;
+	color: black;
+	text-decoration: none;
+	font-weight: 300;
+	color: black;
+	display: block;
+	transition: all 0.3s ease;
+	text-align: center;
+	color: #ca2521 !important;
+}
+
+.desc-contacto {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: white;
+	background-color: #ff5e78;
+	width: 100%;
+	margin-top: 50px
+}
