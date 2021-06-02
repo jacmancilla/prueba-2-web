@@ -9,77 +9,67 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
   <title>Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="estilos.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
   </script>
   <script type="text/javascript">
-       
-      $(documento).ready(function(){
-        $("#cargar").click(function(){
-          $.get("https://mindicador.cl/api", function(data) 
-             $.each(data.uf,function(i,item){
-               $("#uf").append(
-                "<tr><td>" + item.codigo +
-                "</td><td>" + item.nombre +
-                "</td><td>" + item.unidad_medida +
-                "</td><td>" + item.fecha + 
-                "</td><td>" + item.valor +
-                "</td></tr>"
-            
-
-
-             
-                    );
-
-                  });
-                });
-
-              });
-                 
-            });
-
- 
+    var apiUrl = 'https://mindicador.cl/api';
+    fetch(apiUrl).then(response => {
+      return response.json();
+    }).then(data => {
+      $("#uf").append(
+        "<tr><td>" + data.uf.codigo +
+        "</td><td>" + data.uf.nombre +
+        "</td><td>" + data.uf.unidad_medida +
+        "</td><td>" + data.uf.fecha +
+        "</td><td>" + data.uf.valor +
+        "</td></tr>"
+      )
+    }).catch(err => {
+      alert('No se puede obtener los valores de la UF')
+    });
   </script>
 
-<link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
-<!--Logo-->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Logotipo_oficial_del_Gobierno_de_Chile.png"
-    width="100" height="100">
+  <!--Logo-->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Logotipo_oficial_del_Gobierno_de_Chile.png" width="100"
+    height="100">
 
-<!--Menú-->   
-      <header class="page-header">
-        <div class="center-contents">
-         
-          <nav class="page-nav">
-            <ul>
-              <li><a href="#" title="">Inicio</a></li>
-              <li><a href="#" title="">Información</a></li>
-              <li><a href="#" title="">Formulario</a></li>
-              <li><a href="#" title="">Contacto</a></li> 
-              <li><a href="#" title="">Iniciar Sesión</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
 
-<!--Contenido-->
-<div class="Container">
+  <!--Menú-->
+  <header class="page-header">
+    <div class="center-contents">
+
+      <nav class="page-nav">
+        <ul>
+          <li><a href="#" title="">Inicio</a></li>
+          <li><a href="#" title="">Información</a></li>
+          <li><a href="#" title="">Formulario</a></li>
+          <li><a href="#" title="">Contacto</a></li>
+          <li><a href="#" title="">Iniciar Sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--Contenido-->
+  <div class="Container">
     <h2>Formulario Único de Acreditación Socioeconómica(FUAS)</h2>
-</div>
+  </div>
 
-<div class="container-cont">
+  <div class="container-cont">
     <ul>
       <li>Gratuidad.</li>
       <li>Beca Nuevo Milenio.</li>
       <li>Beca Bicentenario.</li>
-      <li>Beca Juan Gómez Millas.</li> 
+      <li>Beca Juan Gómez Millas.</li>
       <li>Beca Juan Gómez Millas Extranjeros.</li>
       <li>Beca Excelencia Técnica.</li>
       <li>Beca Excelencia Académica.</li>
@@ -91,42 +81,42 @@
       <li>Fondo Solidario de Crédito Universitario.</li>
       <li>Crédito con Garantía Estatal.</li>
     </ul>
-</div>
-
-<!--Web Service-->
-<div class="container-w">
-    <div class="row">
-        <h2>“El Gobierno de chile trabaja la gratuidad en base al valor de UF:”<button type="button" class="btn btn-primary" id="cargar">Valor UF</button></h2>
-    </div>
-
-    <div class="row">
-  <table class="table" id="uf">
-      <thead>
-       <tr>
-           <th scope="col1">Codigo</th>
-           <th scope="col1">Nombre</th>
-           <th scope="col1">Unidad de fomento</th>
-           <th scope="col1">fecha</th>
-           <th scope="col1">valor</th>
-      </tr>
-      </thead>
-
-
-  </table>
-
-
-
-</div>
-
-<!--Pie de pagina-->
-
-<div class="desc-contacto">
-      <h1>Sitio desarrollado por alumnos de Duoc Uc</h1>
   </div>
 
+  <!--Web Service-->
+  <div class="container-w">
+    <div class="row">
+      <h2>“El Gobierno de chile trabaja la gratuidad en base al valor de UF:”</h2>
+    </div>
+
+    <div class="row tabla-uf">
+      <table class="table" id="uf">
+        <thead>
+          <tr>
+            <th scope="col1">Codigo</th>
+            <th scope="col1">Nombre</th>
+            <th scope="col1">Unidad de fomento</th>
+            <th scope="col1">fecha</th>
+            <th scope="col1">valor</th>
+          </tr>
+        </thead>
 
 
-</div>
+      </table>
+
+
+
+    </div>
+
+    <!--Pie de pagina-->
+
+    <div class="desc-contacto">
+      <h1>Sitio desarrollado por alumnos de Duoc Uc</h1>
+    </div>
+
+
+
+  </div>
 </body>
- 
+
 </html>

@@ -1,101 +1,88 @@
-{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    }
-
-body{
-    background: url(bg_img.jpg) no-repeat;
-    background-color: #867ae9;
-    
-}
-.page-header{
-    overflow: hidden;
-    background: #444;
-    padding: 1em 0 0 ;
-  }
-
-  .page-header .center-contents{
-    max-width: 650px;
-    overflow: hidden;
-  }
-
-}
-img{
-    padding: 23px 30px;
+body {
+  background-color: #867ae9;
 }
 
-  .page-nav{
-    color: #fff;
-    float:left;
-  }
-
-  .page-nav ul, .page-nav li{
-    list-style:none;
-    margin:0;
-    padding: 0;
-    float: left;
-  }
-
-  .page-nav a{
-    color: #fff;
-    width: 100%;
-    height: auto;
-    display: block;
-    padding: 0.75em 1em;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-.container-cont{
-    color: white;
+.page-header {
+  overflow: hidden;
+  background: #444;
+  padding: 1em 0 0;
 }
 
- /*Contenido*/
+.page-header .center-contents {
+  max-width: 650px;
+  overflow: hidden;
+}
 
- h2{
-    text-align: center;
-    padding: 20px; 
-    color: white;
- }
+.page-nav {
+  color: #fff;
+  float: left;
+}
 
- /*FOOTER*/
+.page-nav ul, .page-nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
 
- .footer{
-    background-color: #F29720;
-    padding:66px ;
-    
-  }
-  
-  .footer-col{
-    width: 25%;
-    
-  }
-  
-  .footer-col ul li:not(:last-child){
-    margin-bottom: 10px;
-  }
-  
-  .footer-col ul li a h1{
-    font-size: 20px;
-    text-transform:capitalize;
-    color:black;
-    text-decoration: none;
-    font-weight: 300;
-    color:black;
-    display: block;
-    transition: all 0.3s ease;
-    text-align: center;
-    color: #ca2521 !important;
-    
-    
-    
-  }
-  
-  .desc-contacto{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white;
-    background-color: #ff5e78;
-    width: 100%;
-    margin-top: 50px
-  }
+.page-nav a {
+  color: #fff;
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container-cont {
+  color: white;
+}
+
+/*Contenido*/
+
+h2 {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+/*FOOTER*/
+
+.footer {
+  background-color: #F29720;
+  padding: 66px;
+}
+
+.footer-col {
+  width: 25%;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a h1 {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+  display: block;
+  transition: all 0.3s ease;
+  text-align: center;
+  color: #ca2521 !important;
+}
+
+.desc-contacto {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  background-color: #ff5e78;
+  width: 100%;
+  margin-top: 50px
+}
+
+.tabla-uf {
+  margin: 0px 50px;
+}
