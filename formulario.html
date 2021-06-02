@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <title>formulario</title>
+
+    <link href="home.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+</head>
+
+<!--Barra de inicio-->
+
+<body>
+    <!--NavBar -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Logotipo_oficial_del_Gobierno_de_Chile.png"
+        width="100" height="100">
+    <header class="page-header">
+        <div class="center-contents">
+
+            <nav class="page-nav">
+                <ul>
+                    <li><a href="#" title="">Inicio</a></li>
+                    <li><a href="#" title="">Información</a></li>
+                    <li><a href="#" title="">Formulario</a></li>
+                    <li><a href="#" title="">Contacto</a></li>
+                    <li><a href="#" title="">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!--Formulario -->
+    <div class="container espaciado_superior">
+        <p>Para realizar tu inscripción a beneficios estudiantiles del Estado debes llenar correctamente el Formulario
+            Único de Acreditación Socioeconómica (FUAS) en el sitio web, finalizarlo y enviarlo dentro del plazo de
+            inscripción correspondiente.</p>
+        <p>Todos los campos son de caracter obligatorios. Con exepción de los teléfonos de contacto.
+            Sin esos datos, NO podrás enviar tu formulario de inscripción. Es importante que completes toda la
+            información que se solicita.
+        </p>
+
+
+        <form action="" method="GET" name="formulario_contacto">
+            <!--# para enviar informacion del Formulario -->
+            <div class="form-group">
+                <label for="nombre_completo">Nombre:</label>
+                <input type="text" class="form-control" name="nombre" id="nombre">
+            </div>
+
+            <div class="form-group">
+                <label for="rut">Rut:</label>
+                <input type="text" class="form-control" name="rut" id="rut" required">
+
+            </div>
+
+            <h5>Datos del alumno</h5>
+            <!--Subtittulo-->
+            <div class="form-group">
+                <label for="estado_civil">Estado Civil:</label>
+                <input type="text" class="form-control" name="ecivil" id="ecivil">
+            </div>
+
+
+            <!--Botón check -->
+
+            <div class="form-group">
+                <label for="nacionalidad">Nacionalidad:</label>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="chilena">Chilena
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="extranjerapermanencia">Extranjera con
+                        permanencia
+                        definitiva
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="extranjeraresidencia">Extranjera con
+                        residencia
+                    </label>
+                </div>
+            </div>
+            <!-- -->
+
+
+            <div class="form-group">
+                <label for="actividad">Actividad:</label>
+                <input type="text" class="form-control" name="ecivil" id="Actividad">
+            </div>
+
+            <div class="form-group">
+                <label for="estado_civil">Estado Civil:</label>
+                <input type="text" class="form-control" name="ecivil" id="ecivil">
+            </div>
+
+
+
+            <!--Botón check -->
+            <div class="form-group">
+                <label for="anos_extranjero">Cursaste los 2 años de enseñanza escolar en el extranjero:</label>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="si">Si
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="si">NO
+                    </label>
+                </div>
+                <!-- -->
+
+                <!--Botón check -->
+                <div class="form-group">
+                    <label for="anos_extranjero">Tienes alguna discapacidad::</label>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="si">Si
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="si">NO
+                        </label>
+                    </div>
+                    <!-- -->
+
+
+                    <div class="form-group">
+                        <label for="pueblo_originario">A que pueblo originario pertences:</label>
+                        <input type="text" class="form-control" name="pueblo_originario" id="pueblo_originario">
+                    </div>
+
+
+                    <!--Botón check -->
+                    <div class="form-group">
+                        <label for="anos_extranjero">Cuenta de ahorro para el estudio en educación superior:</label>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="cuenta_ahorro">Si
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="cuenta_ahorro">NO
+                            </label>
+                        </div>
+                        <!-- -->
+
+
+                        <h5>Antecedentes académicos</h5>
+                        <!--Subtittulo-->
+                        <div class="form-group">
+                            <label for="prom_enenanzamedia"> Promedio notas enseñanza media:</label>
+                            <input type="text" class="form-control" name="prom_enenanzamedia" id="prom_enenanzamedia">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="institucion_estudio"> Institución de educación superior, donde te encuentras
+                                estudiando:</label>
+                            <input type="text" class="form-control" name="institucion_estudio" id="institucion_estudio">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ano_matricula"> Ultimo año de matricula en institución superior:</label>
+                            <input type="text" class="form-control" name="ano_matricula" id="ano_matricula">
+                        </div>
+
+                        <h5>Integrantes grupo familiar:</h5>
+                        <!--Subtittulo-->
+
+                        <!--ACÁ VA TU TABLAAAAAAAAAAAAAAAAA XD-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="form-group">
+                            <button type="reset" class="btn btn-outline-primary">Limpiar campos</button>
+                            <button type="submit" class="btn btn-primary">Envía formulario</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </form>
+        <script>
+            $().ready(function () {
+                $("#formulario_contacto").validate({
+                    rules: {
+                        nombre: "required",
+                    },
+                    messages: {
+                        nombre: "Debe ingresar un nombre",
+                    },
+                    submitHandler: function (form) {
+                        form.submit();
+                    }
+                });
+            });
+        </script>
+
+    </div>
+</body>
+<!--Pie de pagina-->
+
+
+</html>
